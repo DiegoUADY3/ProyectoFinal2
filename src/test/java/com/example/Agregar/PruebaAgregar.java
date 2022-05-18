@@ -44,7 +44,7 @@ public class PruebaAgregar {
     driver.findElement(By.name("age")).sendKeys("19");
     driver.findElement(By.xpath("//i")).click();
     //Warning: assertTextPresent may require manual changes
-    assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*Diego[\\s\\S]*$"));
+    assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*diego[\\s\\S]*$"));
   }
   @Test
   public void testEditarPrueba() throws Exception {
